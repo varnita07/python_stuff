@@ -1,0 +1,12 @@
+ # Program to keep asking for input until a number > 0 is entered
+
+while True:
+    try:
+        num = float(input("Enter a number greater than 0: "))
+        if num > 0:
+            print(f"Thank you! You entered: {num}")
+            break
+        else:
+            print("The number must be greater than 0. Try again.")
+    except ValueError:
+        print("Invalid input. Please enter a valid number.")

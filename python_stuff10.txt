@@ -1,0 +1,12 @@
+ # Program to find the sum of all numbers divisible by 3 or 5 below 100
+
+# Initialize sum
+total = 0
+
+# Loop through numbers from 1 to 99
+for i in range(1, 100):
+    if i % 3 == 0 or i % 5 == 0:
+        total += i
+
+# Print the result
+print(f"The sum of all numbers divisible by 3 or 5 below 100 is: {total}")

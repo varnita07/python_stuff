@@ -1,0 +1,18 @@
+ # Program to count how many digits a number has without converting to string
+
+# Get input from the user
+num = int(input("Enter a number: "))
+
+# Make number positive for counting
+n = abs(num)
+
+# Special case for 0
+if n == 0:
+    count = 1
+else:
+    count = 0
+    while n > 0:
+        n = n // 10
+        count += 1
+
+print(f"The number {num} has {count} digit(s).")
